@@ -56,11 +56,8 @@ const Footer = () => {
             <input type="text" placeholder="Name" required />
             <input type="email" placeholder="Email" required />
             <textarea placeholder="Message" rows="4" required></textarea>
-            {/* <button className="fpackage"type="submit">Submit</button> */}
+            <button type="submit">Submit</button>
           </form>
-          <button className="fpackage" type="submit">
-            Submit
-          </button>
         </div>
       </div>
     </footer>

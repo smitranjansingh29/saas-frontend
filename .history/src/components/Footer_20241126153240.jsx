@@ -58,9 +58,7 @@ const Footer = () => {
             <textarea placeholder="Message" rows="4" required></textarea>
             {/* <button className="fpackage"type="submit">Submit</button> */}
           </form>
-          <button className="fpackage" type="submit">
-            Submit
-          </button>
+          <button className="fpackage"type="submit">Submit</button>
         </div>
       </div>
     </footer>
