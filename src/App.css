@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #F5AB1E;
+    --ternary-color: #6F6F6F;
+    --white: #fff;
+    --black: #000;
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+@import url("./styles/Cards.css");
+@import url("./styles/Company.css");
+@import url("./styles/Footer.css");
+@import url("./styles/Hero.css");
+@import url("./styles/Navbar.css");
+@import url("./styles/WhyUs.css");
+.App {
+    text-align: center;
+    background-image: url("https://images.saymedia-content.com/.image/t_share/MTkyOTkyMzE2OTQ3MjQ0MjUz/website-background-templates.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #5c92ff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    background-image: url("https://images.saymedia-content.com/.image/t_share/MTkyOTkyMzE2OTQ3MjQ0MjUz/website-background-templates.jpg");
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

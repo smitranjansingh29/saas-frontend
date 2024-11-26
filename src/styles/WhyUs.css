@@ -1,0 +1,43 @@
+.why-us {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    font-family: var(--primary-font);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 60%, rgba(105, 101, 213, 0.8) 85%, rgba(3, 19, 251, 0.5) 100%);
+}
+
+.why-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.why-us-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.why-us-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.stat-item h3 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.stat-item p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
