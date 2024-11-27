@@ -1,11 +1,11 @@
-// src/components/ProductPage.jsx
-
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-//import "../styles/ProductPage.css"; // Import the external CSS file
+// Import your styles
+import "../styles/ProductPage.css"; // Import the external CSS file
 
 const ProductPage = () => {
   const { productId } = useParams();
+  const [isFullScreen, setIsFullScreen] = useState(false);
 
   const products = {
     "project-alpha": {
@@ -50,22 +50,34 @@ const ProductPage = () => {
     return <h1>Product not found!</h1>;
   }
 
+  const handleVideoClick = () => {
+  
+    setIsFullScreen(!isFullScreen);
+  };
+
   return (
-    <div className="product-page">
-      <div className="product-header">
-        <h1 className="product-title">{product.title}</h1>
+    <div className={`product-page ${isFullScreen ? "full-screen" : ""}`}>
+      {/* Video Background */}
+
+      <div className="projectvideocontainer">
+      <video
+        className="background-video"
+        src="/assets/RWAV.mp4"
+        autoPlay
+        loop
+        muted
+        onClick={handleVideoClick}
+      />
       </div>
-      <div className="product-content">
-        <img
-          src={product.image}
-          alt={product.title}
-          className="product-image"
-        />
-        <div className="product-details">
-          <p className="product-description">{product.description}</p>
-          <p className="product-details-text">{product.details}</p>
-        </div>
+
+
+      <div className="projecttextcontainer">
+      {/* Card for Title and Subtitle */}
+      <div className="product-card">
+        <h1>{product.title}</h1>
+        <p>{product.description}</p>
       </div>
+    </div>
     </div>
   );
 };
