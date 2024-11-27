@@ -11,19 +11,19 @@ const Cards = () => {
     },
     {
       id: "project-beta",
-      title: "RWA",
+      title: "Project Beta",
       description:
-        "Our RWA application brings residents and management closer with intuitive tools designed for seamless collaboration and efficient governance.",
+        "A platform for seamless team collaboration and communication.",
     },
     {
       id: "project-gamma",
-      title: "School ERP",
+      title: "Project Gamma",
       description:
         "A data-driven approach to predict trends and analyze markets.",
     },
     {
       id: "project-delta",
-      title: "Ayush Project",
+      title: "Project Delta",
       description:
         "Revolutionizing the e-commerce space with AI recommendations.",
     },

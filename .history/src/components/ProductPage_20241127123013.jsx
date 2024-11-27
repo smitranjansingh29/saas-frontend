@@ -24,48 +24,20 @@ const ProductPage = () => {
           title: "Tenant Management",
           description:
             "Tenant Invite, Registration & Approval, Tenant Details Update, Move-in/Move-out Notifications, KYC Integration.",
-          image:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ_vH6hNPOE38NeWBKNOnhynFCtDAJ8d2j1g&s",
+          image: "https://via.placeholder.com/400x250?text=Tenant+Management",
         },
         {
           title: "Owner Management",
           description:
             "Owner Invite, Role-based Access, Re-KYC for Older Data.",
-          image:
-            "https://www.pioneerproperty.in/backend/img/Blog/1680250658-Blog1.jpg",
+          image: "https://via.placeholder.com/400x250?text=Owner+Management",
         },
         {
           title: "Membership Management",
           description:
             "Membership Applications, Fee Management, Document Uploads.",
           image:
-            "https://t4.ftcdn.net/jpg/04/92/46/19/360_F_492461951_3mGuqTE1xbEL8ISyj6oCaKliAqaMWFAP.jpg",
-        },
-        {
-          title: "Facility Management",
-          description:
-            "Clubhouse Booking and Payment Handling Record Keeping and Prepaid Meter Integration",
-          image:
-            "https://t4.ftcdn.net/jpg/04/92/46/19/360_F_492461951_3mGuqTE1xbEL8ISyj6oCaKliAqaMWFAP.jpg",
-        },
-      ],
-      whyChooseUs: [
-        {
-          title: "End-to-End Management",
-          description:
-            "Seamless handling of tenants, owners, staff, and inventory.",
-        },
-        {
-          title: "Customizable Solutions",
-          description: "Tailored features for RWA operations.",
-        },
-        {
-          title: "Robust API Integration",
-          description: "Simplify backend operations and workflows.",
-        },
-        {
-          title: "Secure and Transparent",
-          description: "Verified member details with document uploads.",
+            "https://via.placeholder.com/400x250?text=Membership+Management",
         },
       ],
       image:
@@ -90,7 +62,7 @@ const ProductPage = () => {
         alt={product.title}
         className="main-product-image"
       />
-      <h2 className="section-title">Features</h2>
+
       {product.features && (
         <div className="features-section">
           {product.features.map((feature, index) => (
@@ -111,20 +83,6 @@ const ProductPage = () => {
               </div>
             </div>
           ))}
-        </div>
-      )}
-
-      {product.whyChooseUs && (
-        <div className="why-choose-us">
-          <h2 className="section-title">Why Choose Us?</h2>
-          <div className="why-choose-us-content">
-            {product.whyChooseUs.map((item, index) => (
-              <div className="why-choose-item" key={index}>
-                <h3 className="why-choose-title">{item.title}</h3>
-                <p className="why-choose-description">{item.description}</p>
-              </div>
-            ))}
-          </div>
         </div>
       )}
     </div>

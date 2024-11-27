@@ -1,5 +1,5 @@
 .footer {
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     padding: 2rem;
     font-family: var(--primary-font);
     position: relative;
@@ -91,18 +91,18 @@
     background-color: #0056b3;
 }
 
-.fpackage {
+
+.fpackage{
     font-weight: 600;
-    background-color: rgba(6, 147, 227, 1);
+    background-color:  rgba(6, 147, 227, 1);
     color: white;
     border: none;
     padding: 10px 19px;
     border-radius: 0.5em;
     font-family: 'DM Sans';
     margin-top: 10px;
-    width: 80%;
+    width:80%;
 }
-
 
 /* Responsive Design */
 

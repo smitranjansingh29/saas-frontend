@@ -13,7 +13,7 @@ const Cards = () => {
       id: "project-beta",
       title: "RWA",
       description:
-        "Our RWA application brings residents and management closer with intuitive tools designed for seamless collaboration and efficient governance.",
+        "A platform for seamless team collaboration and communication.",
     },
     {
       id: "project-gamma",

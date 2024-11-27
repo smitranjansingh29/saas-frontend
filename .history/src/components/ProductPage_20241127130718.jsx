@@ -25,26 +25,19 @@ const ProductPage = () => {
           description:
             "Tenant Invite, Registration & Approval, Tenant Details Update, Move-in/Move-out Notifications, KYC Integration.",
           image:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ_vH6hNPOE38NeWBKNOnhynFCtDAJ8d2j1g&s",
+            "https://t4.ftcdn.net/jpg/04/92/46/19/360_F_492461951_3mGuqTE1xbEL8ISyj6oCaKliAqaMWFAP.jpghttps://t4.ftcdn.net/jpg/04/92/46/19/360_F_492461951_3mGuqTE1xbEL8ISyj6oCaKliAqaMWFAP.jpg",
         },
         {
           title: "Owner Management",
           description:
             "Owner Invite, Role-based Access, Re-KYC for Older Data.",
           image:
-            "https://www.pioneerproperty.in/backend/img/Blog/1680250658-Blog1.jpg",
+            "https://t4.ftcdn.net/jpg/04/92/46/19/360_F_492461951_3mGuqTE1xbEL8ISyj6oCaKliAqaMWFAP.jpg",
         },
         {
           title: "Membership Management",
           description:
             "Membership Applications, Fee Management, Document Uploads.",
-          image:
-            "https://t4.ftcdn.net/jpg/04/92/46/19/360_F_492461951_3mGuqTE1xbEL8ISyj6oCaKliAqaMWFAP.jpg",
-        },
-        {
-          title: "Facility Management",
-          description:
-            "Clubhouse Booking and Payment Handling Record Keeping and Prepaid Meter Integration",
           image:
             "https://t4.ftcdn.net/jpg/04/92/46/19/360_F_492461951_3mGuqTE1xbEL8ISyj6oCaKliAqaMWFAP.jpg",
         },
@@ -90,7 +83,7 @@ const ProductPage = () => {
         alt={product.title}
         className="main-product-image"
       />
-      <h2 className="section-title">Features</h2>
+      <h2 className="section-title">Product Features</h2>
       {product.features && (
         <div className="features-section">
           {product.features.map((feature, index) => (

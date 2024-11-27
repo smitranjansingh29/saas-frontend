@@ -32,7 +32,7 @@ const ProductPage = () => {
           description:
             "Owner Invite, Role-based Access, Re-KYC for Older Data.",
           image:
-            "https://www.pioneerproperty.in/backend/img/Blog/1680250658-Blog1.jpg",
+            "https://t4.ftcdn.net/jpg/04/92/46/19/360_F_492461951_3mGuqTE1xbEL8ISyj6oCaKliAqaMWFAP.jpg",
         },
         {
           title: "Membership Management",

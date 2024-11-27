@@ -26,7 +26,7 @@
 
 .main-product-image {
     width: 100%;
-    max-width: 300px;
+    max-width: 800px;
     margin: 20px auto;
     display: block;
     border-radius: 10px;
@@ -53,12 +53,8 @@
 }
 
 .feature-image {
-    width: 50%;
-    /* Increased width to occupy more space */
-    max-width: 400px;
-    /* Increased max-width */
-    height: auto;
-    /* Maintain aspect ratio */
+    width: 40%;
+    max-width: 300px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
