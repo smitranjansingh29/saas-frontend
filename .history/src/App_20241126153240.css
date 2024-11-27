@@ -15,14 +15,13 @@
 @import url("./styles/Hero.css");
 @import url("./styles/Navbar.css");
 @import url("./styles/WhyUs.css");
-@import url("./styles/ProductPage.css");
 .App {
     text-align: center;
+    background-image: url("https://images.saymedia-content.com/.image/t_share/MTkyOTkyMzE2OTQ3MjQ0MjUz/website-background-templates.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    background-color: #8ec0f5;
 }
 
 .App-logo {

@@ -2,29 +2,27 @@
 
 import React from "react";
 import { useParams } from "react-router-dom";
-//import "../styles/ProductPage.css"; // Import the external CSS file
+import "../styles/ProductPage.css"; // Import the external CSS file
 
 const ProductPage = () => {
   const { productId } = useParams();
 
   const products = {
     "project-alpha": {
-      title: "Pesticides",
+      title: "Project Alpha",
       description:
         "An innovative solution to automate tasks and improve efficiency.",
       details:
         "Project Alpha leverages cutting-edge technology to simplify your workflows and boost productivity. With automation at its core, it enables seamless integration across various tools and platforms.",
-      image:
-        "https://www.shutterstock.com/image-vector/spraying-pesticide-insecticide-farmer-holding-260nw-2092134667.jpg",
+      image: "https://via.placeholder.com/400x250?text=Project+Alpha",
     },
     "project-beta": {
-      title: "RWA",
+      title: "Project Beta",
       description:
         "A platform for seamless team collaboration and communication.",
       details:
         "Enhance your team's efficiency with Project Beta—a comprehensive tool designed for real-time communication, task management, and file sharing.",
-      image:
-        "https://img.freepik.com/premium-vector/rwa-logo-rwa-letter-rwa-letter-logo-design-initials-rwa-logo-linked-with-circle-uppercase-monogram-logo-rwa-typography-technology-business-real-estate-brand_229120-68640.jpg?text=Project+Beta",
+      image: "https://via.placeholder.com/400x250?text=Project+Beta",
     },
     "project-gamma": {
       title: "Project Gamma",

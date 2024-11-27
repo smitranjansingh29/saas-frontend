@@ -48,19 +48,6 @@ const Hero = () => {
 
   return (
     <div className="mcards-container">
-
-            
-    <div className="hero">
-      <div className="hero-slider">
-        <div className="hero-slide">
-          <div className="hero-image image-wrapper">
-            <img src={slides[currentSlide].image} alt="Slide" />
-          </div>
-
-        <div className="mcards-container">
-          <div className="hero-text mcard ">
-            <h1 classname="mcard-heading">{slides[currentSlide].heading}</h1>
-            <p classname="mcard-content">{slides[currentSlide].text}</p>
       <div className="hero">
         <div className="hero-slider">
           <div className="hero-slide">
@@ -87,7 +74,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };
