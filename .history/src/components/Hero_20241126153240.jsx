@@ -47,33 +47,32 @@ const Hero = () => {
   };
 
   return (
-    <div className="mcards-container">
-      <div className="hero">
-        <div className="hero-slider">
-          <div className="hero-slide">
-            <div className="hero-image image-wrapper">
-              <img src={slides[currentSlide].image} alt="Slide" />
-            </div>
-
-            <div className="mcards-container">
-              <div className="hero-text hcard ">
-                <h1 classname="hcard-heading">
-                  {slides[currentSlide].heading}
-                </h1>
-                <p classname="hcard-content">{slides[currentSlide].text}</p>
-              </div>
-            </div>
+    <div className="cards-container">
+    <div className="hero">
+      <div className="hero-slider">
+        <div className="hero-slide">
+          <div className="hero-image image-wrapper">
+            <img src={slides[currentSlide].image} alt="Slide" />
           </div>
-          <div className="hero-navigation">
-            <button onClick={handlePrev} className="nav-btn">
-              {"<"}
-            </button>
-            <button onClick={handleNext} className="nav-btn">
-              {">"}
-            </button>
+
+        <div className="hcards-container">
+          <div className="hero-text hcard ">
+            <h1 classname="hcard-heading">{slides[currentSlide].heading}</h1>
+            <p classname="hcard-content">{slides[currentSlide].text}</p>
           </div>
         </div>
+
+        </div>
+        <div className="hero-navigation">
+          <button onClick={handlePrev} className="nav-btn">
+            {"<"}
+          </button>
+          <button onClick={handleNext} className="nav-btn">
+            {">"}
+          </button>
+        </div>
       </div>
+    </div>
     </div>
   );
 };
