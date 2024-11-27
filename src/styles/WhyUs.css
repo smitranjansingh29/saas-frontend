@@ -3,7 +3,7 @@
     padding: 4rem 2rem;
     background-color: #fff;
     font-family: var(--primary-font);
-    background: radial-gradient(circle, rgba(255, 255, 255, 1) 60%, rgba(105, 101, 213, 0.8) 85%, rgba(3, 19, 251, 0.5) 100%);
+    /* background: radial-gradient(circle, rgba(255, 255, 255, 1) 60%, rgba(105, 101, 213, 0.8) 85%, rgba(3, 19, 251, 0.5) 100%); */
 }
 
 .why-us h2 {

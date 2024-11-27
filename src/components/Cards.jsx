@@ -30,7 +30,11 @@ const Cards = () => {
   ];
 
   return (
-    <div className="cards-container">
+    <>
+        <div className="Ctriangle-separator Ctriangle-top"></div>
+    <div className="cards-container maincard">
+
+       {/* <div className="triangle-separator triangle-top"></div> */}
       {cardData.map((card) => (
         <div className="card" key={card.id}>
           <h3 className="card-heading">{card.title}</h3>
@@ -40,9 +44,13 @@ const Cards = () => {
               Read More
             </Link>
           </div>
+
         </div>
       ))}
+      
     </div>
+    {/* <div className="triangle-separator triangle-bottom"></div> */}
+    </>
   );
 };
 

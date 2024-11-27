@@ -4,6 +4,7 @@ import React from "react";
 const Company = () => {
   return (
     <div className="company-section">
+      {/* <div className="ctriangle-separator ctriangle-top"></div> */}
       <div className="company-content">
         <h1>You're in good company</h1>
         <div className="company-logos">
@@ -34,7 +35,7 @@ const Company = () => {
         </div>
         <button className="npackage">Start Free Trial</button>
       </div>
-      <div className="triangle-separator"></div>
+      <div className="ctriangle-separator ctriangle-bottom"></div>
     </div>
   );
 };

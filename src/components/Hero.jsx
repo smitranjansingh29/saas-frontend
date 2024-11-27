@@ -47,7 +47,8 @@ const Hero = () => {
   };
 
   return (
-    <div className="cards-container">
+    <div className="mcards-container">
+            
     <div className="hero">
       <div className="hero-slider">
         <div className="hero-slide">
@@ -55,10 +56,10 @@ const Hero = () => {
             <img src={slides[currentSlide].image} alt="Slide" />
           </div>
 
-        <div className="hcards-container">
-          <div className="hero-text hcard ">
-            <h1 classname="hcard-heading">{slides[currentSlide].heading}</h1>
-            <p classname="hcard-content">{slides[currentSlide].text}</p>
+        <div className="mcards-container">
+          <div className="hero-text mcard ">
+            <h1 classname="mcard-heading">{slides[currentSlide].heading}</h1>
+            <p classname="mcard-content">{slides[currentSlide].text}</p>
           </div>
         </div>
 
@@ -73,6 +74,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
+    <div className="triangle-separator-bottom"></div>
     </div>
   );
 };
