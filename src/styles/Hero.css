@@ -69,16 +69,30 @@
     background-color: gray;
 }
 
-/* .hcards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: radial-gradient(circle, rgba(255, 255, 255, 1) 60%, rgba(173, 216, 230, 0.8) 85%, rgba(0, 123, 255, 0.5) 100%);
-  } */
+.mcards-container {
+  position:relative;
+  }
 
+  .triangle-separator-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #e9ebf7; /* Light purple color */
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+  }
+  
+  /* Bottom Triangle Separator */
+  .triangle-separator-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #e9ebf7; /* Light purple color */
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  }
 
 
   .hcard {

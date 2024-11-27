@@ -18,11 +18,11 @@
 @import url("./styles/ProductPage.css");
 .App {
     text-align: center;
-    background-color: #8ec0f5;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+    background-color: #8ec0f5;
 }
 
 .App-logo {
