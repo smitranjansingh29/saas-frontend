@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import "../styles/Hero.css";
 
+
 const slides = [
   {
     id: 1,
@@ -25,20 +26,25 @@ const slides = [
   },
 ];
 
+
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+
 
   const handleNext = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
   };
+
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
     }, 3500); // Change every 2 seconds
 
+
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []);
+
 
   const handlePrev = () => {
     setCurrentSlide((prevSlide) =>
@@ -46,27 +52,16 @@ const Hero = () => {
     );
   };
 
+
   return (
     <div className="mcards-container">
-
-            
-    <div className="hero">
-      <div className="hero-slider">
-        <div className="hero-slide">
-          <div className="hero-image image-wrapper">
-            <img src={slides[currentSlide].image} alt="Slide" />
-          </div>
-
-        <div className="mcards-container">
-          <div className="hero-text mcard ">
-            <h1 classname="mcard-heading">{slides[currentSlide].heading}</h1>
-            <p classname="mcard-content">{slides[currentSlide].text}</p>
       <div className="hero">
         <div className="hero-slider">
           <div className="hero-slide">
             <div className="hero-image image-wrapper">
               <img src={slides[currentSlide].image} alt="Slide" />
             </div>
+
 
             <div className="mcards-container">
               <div className="hero-text hcard ">
@@ -88,8 +83,8 @@ const Hero = () => {
         </div>
       </div>
     </div>
-    </div>
   );
 };
+
 
 export default Hero;
