@@ -9,7 +9,7 @@ const ProductPage = () => {
 
   const products = {
     "project-alpha": {
-      title: "Pesticides",
+      title: "Project Alpha",
       description:
         "An innovative solution to automate tasks and improve efficiency.",
       details:
@@ -18,13 +18,12 @@ const ProductPage = () => {
         "https://www.shutterstock.com/image-vector/spraying-pesticide-insecticide-farmer-holding-260nw-2092134667.jpg",
     },
     "project-beta": {
-      title: "RWA",
+      title: "Project Beta",
       description:
         "A platform for seamless team collaboration and communication.",
       details:
         "Enhance your team's efficiency with Project Beta—a comprehensive tool designed for real-time communication, task management, and file sharing.",
-      image:
-        "https://img.freepik.com/premium-vector/rwa-logo-rwa-letter-rwa-letter-logo-design-initials-rwa-logo-linked-with-circle-uppercase-monogram-logo-rwa-typography-technology-business-real-estate-brand_229120-68640.jpg?text=Project+Beta",
+      image: "https://via.placeholder.com/400x250?text=Project+Beta",
     },
     "project-gamma": {
       title: "Project Gamma",
