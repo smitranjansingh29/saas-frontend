@@ -1,12 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
-// Import your styles
-import "../styles/ProductPage.css"; // Import the external CSS file
-
+import "../styles/ProductPage.css";
 
 const ProductPage = () => {
   const { productId } = useParams();
-  const [isFullScreen, setIsFullScreen] = useState(false);
 
   const products = {
     "project-alpha": {
@@ -28,26 +25,19 @@ const ProductPage = () => {
           description:
             "Tenant Invite, Registration & Approval, Tenant Details Update, Move-in/Move-out Notifications, KYC Integration.",
           image:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ_vH6hNPOE38NeWBKNOnhynFCtDAJ8d2j1g&s",
+            "https://t4.ftcdn.net/jpg/04/92/46/19/360_F_492461951_3mGuqTE1xbEL8ISyj6oCaKliAqaMWFAP.jpghttps://t4.ftcdn.net/jpg/04/92/46/19/360_F_492461951_3mGuqTE1xbEL8ISyj6oCaKliAqaMWFAP.jpg",
         },
         {
           title: "Owner Management",
           description:
             "Owner Invite, Role-based Access, Re-KYC for Older Data.",
           image:
-            "https://www.pioneerproperty.in/backend/img/Blog/1680250658-Blog1.jpg",
+            "https://t4.ftcdn.net/jpg/04/92/46/19/360_F_492461951_3mGuqTE1xbEL8ISyj6oCaKliAqaMWFAP.jpg",
         },
         {
           title: "Membership Management",
           description:
             "Membership Applications, Fee Management, Document Uploads.",
-          image:
-            "https://t4.ftcdn.net/jpg/04/92/46/19/360_F_492461951_3mGuqTE1xbEL8ISyj6oCaKliAqaMWFAP.jpg",
-        },
-        {
-          title: "Facility Management",
-          description:
-            "Clubhouse Booking and Payment Handling Record Keeping and Prepaid Meter Integration",
           image:
             "https://t4.ftcdn.net/jpg/04/92/46/19/360_F_492461951_3mGuqTE1xbEL8ISyj6oCaKliAqaMWFAP.jpg",
         },
@@ -82,79 +72,54 @@ const ProductPage = () => {
     return <h1>Product not found!</h1>;
   }
 
-  const handleVideoClick = () => {
-  
-    setIsFullScreen(!isFullScreen);
-  };
-
   return (
-<div className={`product-page ${isFullScreen ? "full-screen" : ""}`}>
-  <div className="projectvideocontainer">
-    <video
-      className="background-video"
-      src="/assets/RWAV.mp4"
-      autoPlay
-      loop
-      muted
-      onClick={handleVideoClick}
-    />
-  </div>
+    <div className="product-page">
+      <div className="product-header">
+        <h1 className="product-title">{product.title}</h1>
+        <p className="product-description">{product.description}</p>
+      </div>
+      <img
+        src={product.image}
+        alt={product.title}
+        className="main-product-image"
+      />
+      <h2 className="section-title">Why Choose Us?</h2>
+      {product.features && (
+        <div className="features-section">
+          {product.features.map((feature, index) => (
+            <div
+              className={`feature-item ${
+                index % 2 === 0 ? "zigzag-left" : "zigzag-right"
+              }`}
+              key={index}
+            >
+              <img
+                src={feature.image}
+                alt={feature.title}
+                className="feature-image"
+              />
+              <div className="feature-details">
+                <h3 className="feature-title">{feature.title}</h3>
+                <p className="feature-description">{feature.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
 
- 
-  <div className="projecttextcontainer">
-    <div className="product-card">
-      <h1>{product.title}</h1>
-      <p>{product.description}</p>
-    </div>
-  </div>
-
-  <img
-    src={product.image}
-    alt={product.title}
-    className="main-product-image"
-  />
-
- 
-  <h2 className="section-title">Features</h2>
-  {product.features && (
-    <div className="features-section">
-      {product.features.map((feature, index) => (
-        <div
-          className={`feature-item ${
-            index % 2 === 0 ? "zigzag-left" : "zigzag-right"
-          }`}
-          key={index}
-        >
-          <img
-            src={feature.image}
-            alt={feature.title}
-            className="feature-image"
-          />
-          <div className="feature-details">
-            <h3 className="feature-title">{feature.title}</h3>
-            <p className="feature-description">{feature.description}</p>
+      {product.whyChooseUs && (
+        <div className="why-choose-us">
+          <h2 className="section-title">Why Choose Us?</h2>
+          <div className="why-choose-us-content">
+            {product.whyChooseUs.map((item, index) => (
+              <div className="why-choose-item" key={index}>
+                <h3 className="why-choose-title">{item.title}</h3>
+                <p className="why-choose-description">{item.description}</p>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-  )}
-
-  {product.whyChooseUs && (
-    <div className="why-choose-us">
-      <h2 className="section-title">Why Choose Us?</h2>
-      <div className="why-choose-us-content">
-        {product.whyChooseUs.map((item, index) => (
-          <div className="why-choose-item" key={index}>
-            <h3 className="why-choose-title">{item.title}</h3>
-            <p className="why-choose-description">{item.description}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  )}
-</div>
-
-    </div>
+      )}
     </div>
   );
 };

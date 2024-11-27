@@ -1,0 +1,92 @@
+import React from "react";
+import { useParams } from "react-router-dom";
+import "../styles/ProductPage.css";
+
+const ProductPage = () => {
+  const { productId } = useParams();
+
+  const products = {
+    "project-alpha": {
+      title: "Pesticides",
+      description:
+        "An innovative solution to automate tasks and improve efficiency.",
+      details:
+        "Project Alpha leverages cutting-edge technology to simplify your workflows and boost productivity. With automation at its core, it enables seamless integration across various tools and platforms.",
+      image:
+        "https://www.shutterstock.com/image-vector/spraying-pesticide-insecticide-farmer-holding-260nw-2092134667.jpg",
+    },
+    "project-beta": {
+      title: "RWA Management",
+      description:
+        "Our RWA application brings residents and management closer with intuitive tools designed for seamless collaboration and efficient governance.",
+      features: [
+        {
+          title: "Tenant Management",
+          description:
+            "Tenant Invite, Registration & Approval, Tenant Details Update, Move-in/Move-out Notifications, KYC Integration.",
+          image: "https://via.placeholder.com/400x250?text=Tenant+Management",
+        },
+        {
+          title: "Owner Management",
+          description:
+            "Owner Invite, Role-based Access, Re-KYC for Older Data.",
+          image: "https://via.placeholder.com/400x250?text=Owner+Management",
+        },
+        {
+          title: "Membership Management",
+          description:
+            "Membership Applications, Fee Management, Document Uploads.",
+          image:
+            "https://via.placeholder.com/400x250?text=Membership+Management",
+        },
+      ],
+      image:
+        "https://img.freepik.com/premium-vector/rwa-logo-rwa-letter-rwa-letter-logo-design-initials-rwa-logo-linked-with-circle-uppercase-monogram-logo-rwa-typography-technology-business-real-estate-brand_229120-68640.jpg",
+    },
+  };
+
+  const product = products[productId];
+
+  if (!product) {
+    return <h1>Product not found!</h1>;
+  }
+
+  return (
+    <div className="product-page">
+      <div className="product-header">
+        <h1 className="product-title">{product.title}</h1>
+        <p className="product-description">{product.description}</p>
+      </div>
+      <img
+        src={product.image}
+        alt={product.title}
+        className="main-product-image"
+      />
+
+      {product.features && (
+        <div className="features-section">
+          {product.features.map((feature, index) => (
+            <div
+              className={`feature-item ${
+                index % 2 === 0 ? "zigzag-left" : "zigzag-right"
+              }`}
+              key={index}
+            >
+              <img
+                src={feature.image}
+                alt={feature.title}
+                className="feature-image"
+              />
+              <div className="feature-details">
+                <h3 className="feature-title">{feature.title}</h3>
+                <p className="feature-description">{feature.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default ProductPage;
