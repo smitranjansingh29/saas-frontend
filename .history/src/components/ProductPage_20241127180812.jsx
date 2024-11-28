@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import "../styles/ProductPage.css";
 
 const ProductPage = () => {
   const { productId } = useParams();
-  const [isFullScreen, setIsFullScreen] = useState(false);
 
   const products = {
     "project-alpha": {
@@ -79,35 +78,9 @@ const ProductPage = () => {
   if (!product) {
     return <h1>Product not found!</h1>;
   }
-  const handleVideoClick = () => {
-    setIsFullScreen(!isFullScreen);
-  };
 
   return (
     <>
-      <div className={`products-page ${isFullScreen ? "full-screen" : ""}`}>
-        {/* Video Background */}
-
-        <div className="projectvideocontainer">
-          <video
-            className="background-video"
-            src="/assets/RWAV.mp4"
-            autoPlay
-            loop
-            muted
-            onClick={handleVideoClick}
-          />
-        </div>
-
-        <div className="projecttextcontainer">
-          {/* Card for Title and Subtitle */}
-          <div className="products-card">
-            <h1>{product.title}</h1>
-            <p>{product.description}</p>
-          </div>
-        </div>
-      </div>
-
       <div className="product-page">
         <h2 className="section-title">Features</h2>
         {product.features && (

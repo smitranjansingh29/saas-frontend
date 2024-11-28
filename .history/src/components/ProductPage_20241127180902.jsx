@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import "../styles/ProductPage.css";
 
 const ProductPage = () => {
   const { productId } = useParams();
-  const [isFullScreen, setIsFullScreen] = useState(false);
 
   const products = {
     "project-alpha": {
@@ -79,9 +78,6 @@ const ProductPage = () => {
   if (!product) {
     return <h1>Product not found!</h1>;
   }
-  const handleVideoClick = () => {
-    setIsFullScreen(!isFullScreen);
-  };
 
   return (
     <>
