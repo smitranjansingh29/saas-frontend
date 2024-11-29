@@ -11,7 +11,6 @@
     color: white;
     transition: all 0.3s ease-in-out;
     gap: 0;
-    background-image: linear-gradient(to bottom right, #4999EE, #EE791A);
     /* Ensure no gaps between columns */
 }
 
