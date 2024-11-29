@@ -9,7 +9,6 @@ const ProductPage = () => {
   const products = {
     "project-alpha": {
       title: "Pesticides",
-      video: "/assets/RWAV.mp4",
       description:
         "An innovative solution to automate tasks and improve efficiency.",
       features: [
@@ -18,27 +17,28 @@ const ProductPage = () => {
           description:
             "Tenant Invite, Registration & Approval, Tenant Details Update, Move-in/Move-out Notifications, KYC Integration.",
           image:
-            "https://img.freepik.com/free-photo/farmer-spraying-vegetables-garden-with-herbicides-man-black-apron_1157-39707.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ_vH6hNPOE38NeWBKNOnhynFCtDAJ8d2j1g&s",
         },
         {
           title: "Owner Management",
           description:
             "Owner Invite, Role-based Access, Re-KYC for Older Data.",
           image:
-            "https://cdn.pixabay.com/photo/2015/01/03/16/49/herbicide-587589_1280.jpg",
+            "https://www.pioneerproperty.in/backend/img/Blog/1680250658-Blog1.jpg",
         },
         {
           title: "Membership Management",
           description:
             "Membership Applications, Fee Management, Document Uploads.",
           image:
-            "https://static.vecteezy.com/system/resources/thumbnails/002/923/715/small/farmer-spraying-pesticide-in-the-rice-field-protection-pest-free-photo.jpg",
+            "https://t4.ftcdn.net/jpg/04/92/46/19/360_F_492461951_3mGuqTE1xbEL8ISyj6oCaKliAqaMWFAP.jpg",
         },
         {
           title: "Facility Management",
           description:
             "Clubhouse Booking and Payment Handling Record Keeping and Prepaid Meter Integration",
-          image: "https://kj1bcdn.b-cdn.net/media/73864/fed.jpg",
+          image:
+            "https://t4.ftcdn.net/jpg/04/92/46/19/360_F_492461951_3mGuqTE1xbEL8ISyj6oCaKliAqaMWFAP.jpg",
         },
       ],
       whyChooseUs: [
@@ -65,7 +65,6 @@ const ProductPage = () => {
     },
     "project-beta": {
       title: "RWA Management",
-      video: "/assets/RWAV.mp4",
       description:
         "Our RWA application brings residents and management closer with intuitive tools designed for seamless collaboration and efficient governance.",
       features: [
@@ -139,7 +138,7 @@ const ProductPage = () => {
         <div className="projectvideocontainer">
           <video
             className="background-video"
-            src={product.video}
+            src="/assets/RWAV.mp4"
             autoPlay
             loop
             muted

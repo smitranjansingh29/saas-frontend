@@ -9,7 +9,6 @@ const ProductPage = () => {
   const products = {
     "project-alpha": {
       title: "Pesticides",
-      video: "/assets/RWAV.mp4",
       description:
         "An innovative solution to automate tasks and improve efficiency.",
       features: [
