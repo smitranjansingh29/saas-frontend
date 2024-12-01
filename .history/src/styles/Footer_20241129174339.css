@@ -1,13 +1,11 @@
 .footer {
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     padding: 2rem;
     font-family: var(--primary-font);
     position: relative;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 55px 55px 0 55px;
-    border-radius: 10px;
 }
 
 .footer-container {

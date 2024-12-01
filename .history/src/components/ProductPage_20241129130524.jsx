@@ -11,7 +11,7 @@ const ProductPage = () => {
       title: "Pesticides",
       video: "/assets/RWAV.mp4",
       description:
-        "An innovative solution to automate tasks and improve efficiency of Pesticiding .",
+        "An innovative solution to automate tasks and improve efficiency.",
       features: [
         {
           title: "User Management",
@@ -129,28 +129,28 @@ const ProductPage = () => {
           description:
             "Easily create, view, and update user roles to ensure the right permissions for every stakeholder in your school management system.",
           image:
-            "https://images.pexels.com/photos/1708912/pexels-photo-1708912.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ_vH6hNPOE38NeWBKNOnhynFCtDAJ8d2j1g&s",
         },
         {
           title: "User Administration",
           description:
             "Add new users, assign roles, and update their details effortlessly. Keep user data organized and accessible for smooth operations.",
           image:
-            "https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://www.pioneerproperty.in/backend/img/Blog/1680250658-Blog1.jpg",
         },
         {
           title: "School Information Hub",
           description:
             "Create schools, manage their types (royalty or fixed), and access a comprehensive list of schools with detailed data. Edit school information and generate invoices seamlessly.",
           image:
-            "https://images.pexels.com/photos/159775/library-la-trobe-study-students-159775.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://t4.ftcdn.net/jpg/04/92/46/19/360_F_492461951_3mGuqTE1xbEL8ISyj6oCaKliAqaMWFAP.jpg",
         },
         {
           title: "Class Management",
           description:
             "Define classes, view their details with student counts, and update editable fields. Perfect for managing academic hierarchies across schools.",
           image:
-            "https://images.pexels.com/photos/5212687/pexels-photo-5212687.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://t4.ftcdn.net/jpg/04/92/46/19/360_F_492461951_3mGuqTE1xbEL8ISyj6oCaKliAqaMWFAP.jpg",
         },
       ],
       whyChooseUs: [
@@ -268,50 +268,44 @@ const ProductPage = () => {
         </div>
       </div>
 
-      <div className="feature-page">
-        <div className="product-page ">
-          <h2 className="section-title">Features</h2>
-          {product.features && (
-            <div className="features-section">
-              {product.features.map((feature, index) => (
-                <div
-                  className={`feature-item ${
-                    index % 2 === 0 ? "zigzag-left" : "zigzag-right"
-                  }`}
-                  key={index}
-                >
-                  <img
-                    src={feature.image}
-                    alt={feature.title}
-                    className="feature-image"
-                  />
-                  <div className="feature-details">
-                    <h3 className="feature-title">{feature.title}</h3>
-                    <p className="feature-description">{feature.description}</p>
-                  </div>
+      <div className="product-page">
+        <h2 className="section-title">Features</h2>
+        {product.features && (
+          <div className="features-section">
+            {product.features.map((feature, index) => (
+              <div
+                className={`feature-item ${
+                  index % 2 === 0 ? "zigzag-left" : "zigzag-right"
+                }`}
+                key={index}
+              >
+                <img
+                  src={feature.image}
+                  alt={feature.title}
+                  className="feature-image"
+                />
+                <div className="feature-details">
+                  <h3 className="feature-title">{feature.title}</h3>
+                  <p className="feature-description">{feature.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {product.whyChooseUs && (
+          <div className="why-choose-us">
+            <h2 className="section-title">Why Choose Us?</h2>
+            <div className="why-choose-us-content">
+              {product.whyChooseUs.map((item, index) => (
+                <div className="why-choose-item" key={index}>
+                  <h3 className="why-choose-title">{item.title}</h3>
+                  <p className="why-choose-description">{item.description}</p>
                 </div>
               ))}
             </div>
-          )}
-        </div>
-      </div>
-
-      <div className="whyChooseUs">
-        <div className="product-page">
-          {product.whyChooseUs && (
-            <div className="why-choose-us">
-              <h2 className="section-title">Why Choose Us?</h2>
-              <div className="why-choose-us-content">
-                {product.whyChooseUs.map((item, index) => (
-                  <div className="why-choose-item" key={index}>
-                    <h3 className="why-choose-title">{item.title}</h3>
-                    <p className="why-choose-description">{item.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </>
   );

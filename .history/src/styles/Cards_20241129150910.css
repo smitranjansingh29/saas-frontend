@@ -73,7 +73,7 @@ body {
     /* Add margin to prevent overlap with separators */
     z-index: 1;
     /* Ensure it sits above separators */
-    background: #ffffff;
+    /* background: #ffffff; */
     /* Add background to cards section for better visibility */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

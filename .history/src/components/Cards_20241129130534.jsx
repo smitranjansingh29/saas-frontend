@@ -7,7 +7,7 @@ const Cards = () => {
       id: "Pesticides",
       title: "Pesticides",
       description:
-        "An innovative solution to automate tasks and improve efficiency in agriculture Management.",
+        "An innovative solution to automate tasks and improve efficiency.",
     },
     {
       id: "RWA",
