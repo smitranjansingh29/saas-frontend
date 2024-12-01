@@ -296,22 +296,20 @@ const ProductPage = () => {
         </div>
       </div>
 
-      <div className="whyChooseUs">
-        <div className="product-page">
-          {product.whyChooseUs && (
-            <div className="why-choose-us">
-              <h2 className="section-title">Why Choose Us?</h2>
-              <div className="why-choose-us-content">
-                {product.whyChooseUs.map((item, index) => (
-                  <div className="why-choose-item" key={index}>
-                    <h3 className="why-choose-title">{item.title}</h3>
-                    <p className="why-choose-description">{item.description}</p>
-                  </div>
-                ))}
-              </div>
+      <div className="product-page">
+        {product.whyChooseUs && (
+          <div className="why-choose-us">
+            <h2 className="section-title">Why Choose Us?</h2>
+            <div className="why-choose-us-content">
+              {product.whyChooseUs.map((item, index) => (
+                <div className="why-choose-item" key={index}>
+                  <h3 className="why-choose-title">{item.title}</h3>
+                  <p className="why-choose-description">{item.description}</p>
+                </div>
+              ))}
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </>
   );
