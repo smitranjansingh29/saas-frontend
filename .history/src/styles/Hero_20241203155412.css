@@ -1,0 +1,138 @@
+.hero {
+    margin-top: 83px;
+    position: relative;
+    padding: 2rem;
+    font-family: var(--primary-font);
+    /* background: linear-gradient(326deg, #00BFFF, rgb(255, 94, 0) 100%); */
+    background-image: linear-gradient(#00BFFF, orange);
+}
+
+.hero-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-wrapper {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    /* Ensures anything outside the dimensions is hidden */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    border-radius: 10px;
+    /* Placeholder background color */
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    max-width: 500px;
+    margin-left: 2rem;
+}
+
+.cta-btn {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-navigation {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-btn {
+    background-color: rgba(6, 147, 227, 1);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.nav-btn:hover {
+    background-color: gray;
+}
+
+.mcards-container {
+    position: relative;
+}
+
+.triangle-separator-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #e9ebf7;
+    /* Light purple color */
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+
+/* Bottom Triangle Separator */
+
+.triangle-separator-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #e9ebf7;
+    /* Light purple color */
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.hcard {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hcard-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.hcard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .hero-slide {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image img {
+        max-width: 100%;
+    }
+    .hero-image {
+        margin-bottom: 1rem;
+    }
+    .hero-text {
+        margin-left: 0;
+    }
+}
