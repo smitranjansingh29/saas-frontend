@@ -9,7 +9,6 @@ import Company from "./components/Company";
 import Cards from "./components/Cards";
 import ProductPage from "./components/ProductPage";
 import ProductListPage from "./components/ProductListPage";
-import AboutUs from "./components/AboutUs";
 import "./App.css";
 
 function App() {
@@ -29,9 +28,8 @@ function App() {
               </>
             }
           />
-          <Route path="/product/:productId" element={<ProductPage />} />
           <Route path="/productList" element={<ProductListPage />} />
-          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/product/:productId" element={<ProductPage />} />
         </Routes>
         <Footer />
       </div>

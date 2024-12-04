@@ -1,10 +1,10 @@
 .hero {
+    margin-top: 83px;
     position: relative;
     padding: 2rem;
     font-family: var(--primary-font);
     /* background: linear-gradient(326deg, #00BFFF, rgb(255, 94, 0) 100%); */
     background-image: linear-gradient(#00BFFF, orange);
-    margin-top: 83px;
 }
 
 .hero-slider {
@@ -102,11 +102,11 @@
 }
 
 .hcard {
-    /* background: #ffffff; */
-    /* border: 1px solid #e0e0e0; */
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
     width: 90%;
     border-radius: 8px;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

@@ -11,9 +11,7 @@ const Navbar = () => {
           alt="Saisatwik Co. Logo"
           className="logo-image"
         />
-        <Link to="/">
-          <span className="company-name">SAISATWIK</span>
-        </Link>
+        <span className="company-name">SAISATWIK</span>
       </div>
       <ul className="nav-links">
         <li>

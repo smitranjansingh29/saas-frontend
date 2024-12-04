@@ -17,9 +17,7 @@
 @import url("./styles/WhyUs.css");
 @import url("./styles/ProductPage.css");
 @import url("./styles/ProductListPage.css");
-@import url("./styles/AboutUs.css");
-.App {
-    /* padding-top: 83px; */
+@import url("./styles/AboutUs.css") .App {
     text-align: center;
     background-size: cover;
     background-position: center;

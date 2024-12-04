@@ -11,9 +11,7 @@ const Navbar = () => {
           alt="Saisatwik Co. Logo"
           className="logo-image"
         />
-        <Link to="/">
-          <span className="company-name">SAISATWIK</span>
-        </Link>
+        <span className="company-name">SAISATWIK</span>
       </div>
       <ul className="nav-links">
         <li>
@@ -26,7 +24,7 @@ const Navbar = () => {
           <Link to="/help">Help</Link>
         </li>
         <li>
-          <Link to="/AboutUs">About Us</Link>
+          <Link to="/about">About Us</Link>
         </li>
       </ul>
     </nav>
