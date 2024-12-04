@@ -63,6 +63,63 @@ const ProductPage = () => {
       image:
         "https://www.shutterstock.com/image-vector/spraying-pesticide-insecticide-farmer-holding-260nw-2092134667.jpg",
     },
+    "project-gamma": {
+      title: "School ERP",
+      video: "/assets/RWAV.mp4",
+      description:
+        "Our RWA application Simplify Financial Processes and Centralized Business Data",
+      features: [
+        {
+          title: "Role Management",
+          description:
+            "Easily create, view, and update user roles to ensure the right permissions for every stakeholder in your school management system.",
+          image:
+            "https://images.pexels.com/photos/1708912/pexels-photo-1708912.jpeg?auto=compress&cs=tinysrgb&w=600",
+        },
+        {
+          title: "User Administration",
+          description:
+            "Add new users, assign roles, and update their details effortlessly. Keep user data organized and accessible for smooth operations.",
+          image:
+            "https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=600",
+        },
+        {
+          title: "School Information Hub",
+          description:
+            "Create schools, manage their types (royalty or fixed), and access a comprehensive list of schools with detailed data. Edit school information and generate invoices seamlessly.",
+          image:
+            "https://images.pexels.com/photos/159775/library-la-trobe-study-students-159775.jpeg?auto=compress&cs=tinysrgb&w=600",
+        },
+        {
+          title: "Class Management",
+          description:
+            "Define classes, view their details with student counts, and update editable fields. Perfect for managing academic hierarchies across schools.",
+          image:
+            "https://images.pexels.com/photos/5212687/pexels-photo-5212687.jpeg?auto=compress&cs=tinysrgb&w=600",
+        },
+      ],
+      whyChooseUs: [
+        {
+          title: "End-to-End Management",
+          description:
+            "Seamless handling of tenants, owners, staff, and inventory.",
+        },
+        {
+          title: "Customizable Solutions",
+          description: "Tailored features for RWA operations.",
+        },
+        {
+          title: "Robust API Integration",
+          description: "Simplify backend operations and workflows.",
+        },
+        {
+          title: "Simplify Financial Processes",
+          description: "Generate and manage invoices with ease. ",
+        },
+      ],
+      image:
+        "https://img.freepik.com/premium-vector/rwa-logo-rwa-letter-rwa-letter-logo-design-initials-rwa-logo-linked-with-circle-uppercase-monogram-logo-rwa-typography-technology-business-real-estate-brand_229120-68640.jpg",
+    },
     "project-beta": {
       title: "RWA Management",
       video: "/assets/RWAV.mp4",

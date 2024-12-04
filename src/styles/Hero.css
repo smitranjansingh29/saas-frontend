@@ -18,7 +18,7 @@
 }
 
 .image-wrapper {
-    width: 500px;
+
     height: 300px;
     overflow: hidden;
     /* Ensures anything outside the dimensions is hidden */
@@ -27,13 +27,13 @@
     align-items: center;
     background: #f0f0f0;
     border-radius: 10px;
-    /* Placeholder background color */
+    
 }
 
 .hero-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .hero-text {
@@ -98,7 +98,7 @@
   .hcard {
     background: #ffffff;
     border: 1px solid #e0e0e0;
-    width:90%;
+    width:100%;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -121,7 +121,7 @@
         text-align: center;
     }
     .hero-image img {
-        max-width: 100%;
+        max-width: 80%;
    
     }
 
@@ -131,5 +131,11 @@
     }
     .hero-text {
         margin-left: 0;
+    }
+
+    .image-wrapper {
+
+        height: 200px;
+    
     }
 }
