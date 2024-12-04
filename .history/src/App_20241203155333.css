@@ -19,7 +19,7 @@
 @import url("./styles/ProductListPage.css");
 @import url("./styles/AboutUs.css");
 .App {
-    /* padding-top: 83px; */
+    padding-top: 83px;
     text-align: center;
     background-size: cover;
     background-position: center;
