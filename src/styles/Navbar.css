@@ -60,3 +60,11 @@ body {
     margin: 0;
     padding-top: 80px;
 }
+
+
+@media (max-width: 797px) {
+    .navbar{
+  visibility: hidden;
+  display: none;
+    }
+  }
