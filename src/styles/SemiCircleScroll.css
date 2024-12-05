@@ -1,0 +1,45 @@
+/* Container styles */
+.semi-circle-container {
+    height: 200vh; /* Allows scroll space */
+    position: relative;
+    background: #f4f4f4;
+    overflow: hidden;
+  }
+  
+  /* Semi-circle styles */
+  .semi-circle {
+    position: fixed;
+    bottom: -50%; /* Starts off the screen */
+    left: 50%;
+    width: 200%;
+    height: 100%;
+    background: black;
+    border-radius: 50%;
+    transform: translateX(-50%) scale(0); /* Initial scale is 0 */
+    transition: transform 1s ease-out;
+    z-index: 1;
+  }
+  
+  .semi-circle.active {
+    transform: translateX(-50%) scale(2); /* Grows to cover the background */
+  }
+  
+  /* Content styles */
+  .content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .content h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 1rem;
+  }
+  

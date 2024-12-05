@@ -1,6 +1,8 @@
 import React from "react";
 // import "../styles/WhyUs.css";
 
+
+
 const WhyUs = () => {
   const stats = [
     {
@@ -29,6 +31,14 @@ const WhyUs = () => {
           </div>
         ))}
       </div>
+
+
+
+
+     
+
+
+
     </div>
   );
 };
