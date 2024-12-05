@@ -1,0 +1,121 @@
+/* Navbar Container */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(180deg, #e6f8e5, #f5fff2);
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+/* Logo Styling */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1d1d1d;
+}
+
+
+/* Navigation Links */
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.NavbarOption {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.NavbarOption:hover {
+    color: #007b00;
+}
+
+
+/* Action Buttons */
+
+.nav-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.login-button,
+.demo-button,
+.signup-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.login-button {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.demo-button {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.signup-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.signup-button:hover {
+    background-color: #333;
+}
+
+.demo-button:hover,
+.login-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+    .nav-links {
+        margin-top: 10px;
+    }
+    .nav-actions {
+        margin-top: 10px;
+    }
+}

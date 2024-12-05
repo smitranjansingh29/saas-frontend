@@ -1,0 +1,115 @@
+:root {
+    --primary-font: "Arial, sans-serif";
+    --primary-color: #0078ff;
+}
+
+body {
+    margin: 0;
+    font-family: var(--primary-font);
+    padding-top: 80px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    font-family: var(--primary-font);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.company-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    list-style: none;
+}
+
+.NavbarOption {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.NavbarOption:hover {
+    color: var(--primary-color);
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.menu-icon .bar.open {
+    transform: rotate(45deg);
+    background-color: var(--primary-color);
+}
+
+.nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.nav-links.open .NavbarOption {
+    padding: 0.5rem 1rem;
+    color: #333;
+}
+
+.nav-links.open .NavbarOption:hover {
+    color: var(--primary-color);
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
