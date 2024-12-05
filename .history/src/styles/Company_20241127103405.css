@@ -1,0 +1,97 @@
+.company-section {
+    position: relative;
+    text-align: center;
+    background: #fff;
+    padding: 50px 20px;
+    font-family: var(--primary-font);
+    /* background: radial-gradient(circle, rgba(255, 255, 255, 1) 60%, rgba(105, 101, 213, 0.8) 85%, rgba(3, 19, 251, 0.5) 100%); */
+}
+
+.company-content {
+    z-index: 1;
+}
+
+.company-content h1 {
+    font-size: 60px;
+}
+
+.company-logos img {
+    margin: 0 10px;
+    height: 40px;
+    opacity: 0.8;
+}
+
+.company-stats {
+    margin-top: 20px;
+}
+
+.company-stats h2 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.company-stats p {
+    font-size: 16px;
+    color: gray;
+}
+
+.cta-button {
+    margin-top: 20px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.npackage{
+    font-weight: 600;
+    background-color:  rgba(6, 147, 227, 1);
+    width:20%;
+    color: white;
+    border: none;
+    padding: 10px 19px;
+    border-radius: 0.5em;
+    font-family: 'DM Sans';
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #d62839;
+}
+
+
+/* Triangle Separator */
+
+
+.ctriangle-separator {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Adjust thickness of the triangle */
+    background: #e9ebf7; /* Light purple color */
+  }
+  
+  .ctriangle-top {
+    top: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+  }
+  
+  .ctriangle-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #e9ebf7; /* Light purple color */
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  }
+
+
+@media (max-width: 797px) {
+  .npackage{
+    width:45%;
+  }
+}

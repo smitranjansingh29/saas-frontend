@@ -1,6 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { HashRouter } from "react-router-dom";
+import {
+  BrowserRouter as Routes,
+  Route,
+  BrowserRouter,
+} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
@@ -15,7 +18,7 @@ import SemiCircleScroll from "./components/SemiCircleScroll";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="App">
         <Navbar />
 
@@ -38,7 +41,7 @@ function App() {
         <Footer />
         {/* <SemiCircleScroll/> */}
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
