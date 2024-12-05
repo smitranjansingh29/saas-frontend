@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import "../styles/Hero.css";
-
 
 const slides = [
   {
@@ -26,25 +24,24 @@ const slides = [
   },
 ];
 
-
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [animated, setAnimated] = useState(false);
 
+  useEffect(() => {
+    // Trigger animation on page load
+    setAnimated(true);
+
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 3500);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const handleNext = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
   };
-
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 3500); // Change every 2 seconds
-
-
-    return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, []);
-
 
   const handlePrev = () => {
     setCurrentSlide((prevSlide) =>
@@ -52,25 +49,27 @@ const Hero = () => {
     );
   };
 
-
-
-
   return (
     <div className="mcards-container">
       <div className="hero">
         <div className="hero-slider">
           <div className="hero-slide">
-            <div className="hero-image image-wrapper">
+            <div
+              className={`hero-image image-wrapper ${
+                animated && currentSlide === 0 ? "animate-pop" : ""
+              }`}
+            >
               <img src={slides[currentSlide].image} alt="Slide" />
             </div>
 
-
             <div className="mcards-container">
-              <div className="hero-text hcard ">
-                <h1 classname="hcard-heading">
-                  {slides[currentSlide].heading}
-                </h1>
-                <p classname="hcard-content">{slides[currentSlide].text}</p>
+              <div
+                className={`hero-text hcard ${
+                  animated && currentSlide === 0 ? "animate-pop" : ""
+                }`}
+              >
+                <h1 className="hcard-heading">{slides[currentSlide].heading}</h1>
+                <p className="hcard-content">{slides[currentSlide].text}</p>
               </div>
             </div>
           </div>
@@ -87,6 +86,5 @@ const Hero = () => {
     </div>
   );
 };
-
 
 export default Hero;

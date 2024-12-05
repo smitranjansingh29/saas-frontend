@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../styles/WhyUs.css";
 
+
+
 const WhyUs = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -50,6 +52,14 @@ const WhyUs = () => {
           </div>
         ))}
       </div>
+
+
+
+
+     
+
+
+
     </div>
   );
 };

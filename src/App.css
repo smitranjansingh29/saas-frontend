@@ -18,6 +18,11 @@
 @import url("./styles/ProductPage.css");
 @import url("./styles/ProductListPage.css");
 @import url("./styles/AboutUs.css");
+@import url("./styles/SemiCircleScroll.css");
+
+
+
+
 .App {
     padding-top: 17px;
     text-align: center;

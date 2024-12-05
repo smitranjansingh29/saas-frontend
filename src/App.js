@@ -14,12 +14,14 @@ import ProductPage from "./components/ProductPage";
 import ProductListPage from "./components/ProductListPage";
 import AboutUs from "./components/AboutUs";
 import "./App.css";
+import SemiCircleScroll from "./components/SemiCircleScroll";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <Navbar />
+
         <Routes>
           <Route
             path="/"
@@ -37,6 +39,7 @@ function App() {
           <Route path="/AboutUs" element={<AboutUs />} />
         </Routes>
         <Footer />
+        {/* <SemiCircleScroll/> */}
       </div>
     </BrowserRouter>
   );
