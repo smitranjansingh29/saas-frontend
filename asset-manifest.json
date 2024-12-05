@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/saas-website/static/css/main.2a1ad601.css",
+    "main.js": "/saas-website/static/js/main.ec6535e2.js",
+    "static/js/453.227e5e0e.chunk.js": "/saas-website/static/js/453.227e5e0e.chunk.js",
+    "index.html": "/saas-website/index.html",
+    "main.2a1ad601.css.map": "/saas-website/static/css/main.2a1ad601.css.map",
+    "main.ec6535e2.js.map": "/saas-website/static/js/main.ec6535e2.js.map",
+    "453.227e5e0e.chunk.js.map": "/saas-website/static/js/453.227e5e0e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a1ad601.css",
+    "static/js/main.ec6535e2.js"
+  ]
+}
